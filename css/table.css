@@ -1,0 +1,70 @@
+header .btn-planes {
+    width: 52rem;
+}
+.sec-one > div:nth-child(1) {
+    margin: 0 auto;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec-one .table-moneda {
+    overflow: visible;
+    justify-content: center;
+    margin: 4rem auto;
+    max-width: 60rem;
+    grid-template-columns: repeat(2, auto);
+}
+.sec-one .table-moneda div {
+    margin: 2rem;
+}
+.btn-tabla {
+    display: none;
+}
+.sec-one > div > img {
+    width: 30rem;
+}
+.sec-one > div .valor-usd {
+    margin: 1.5rem auto;
+}
+.sec-two .cards-cont {
+    margin: 0 auto;
+    max-width: 60rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sec-two .cards-cont .card  {
+    width: 28rem;
+    margin: 1rem;
+}
+.sec-three {
+    display: grid;
+    place-content: center;
+}
+.sec-three h2 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+.sec-four {
+    height: 60rem;
+}
+.sec-four .cards-slider {
+    overflow: hidden;
+    margin: 4rem auto;
+    max-width: 60rem;
+    grid-template-columns: repeat(3, auto);
+}
+.sec-four .cards-slider .planes-cont .card-item {
+    width: 18rem;
+}
+.sec-four .btn-card {
+    display: none;
+}
+.sec-four .planes-cont .card-item .price span {
+    left: 4rem;
+}
+@media (min-width:720px){
+  header > div:nth-child(1) {
+    max-width: 60rem;
+  }
+}

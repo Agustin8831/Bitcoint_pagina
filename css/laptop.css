@@ -1,0 +1,37 @@
+
+.sec-one .table-moneda {
+    max-width: 80rem;
+}
+.sec-one .table-moneda div table {
+    width: 36rem;
+    height: 25rem;
+}
+.sec-one .table-moneda table tr td .down {
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+}
+.sec-one .table-moneda table tr td .up {
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+}
+.sec-two .cards-cont {
+    max-width: 80rem;
+}
+.sec-two .cards-cont .card  {
+    width: 38rem;
+}
+.sec-three {
+    background-size: 110%;
+}
+.sec-four .cards-slider {
+    max-width: 80rem;
+}
+.sec-four .cards-slider .planes-cont .card-item {
+    width: 24rem;
+    height: 28rem;
+}
+.sec-four .planes-cont .card-item .price span {
+    left: 6rem;
+}

@@ -1,0 +1,18 @@
+header {
+    height: 50rem;
+}
+header > div:nth-child(1) {
+    max-width: 80rem;
+}
+header > div:nth-child(1) h1{
+    font-size: 5rem;
+}
+header > div:nth-child(1) p{
+    font-size: 2rem;
+}
+.sec-one > div > img {
+    min-width: 40rem;
+}
+.sec-two > h2 {
+    padding: 0;
+}

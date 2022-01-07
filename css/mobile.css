@@ -1,0 +1,368 @@
+:root {
+    --color-bc-orange:#F7931A;
+    --color-soft-orange:#FFE9D5;
+    --color-secondary-blue:#1A9AF7;
+    --color-soft-blue:#E7F5FF;
+    --color-warm-black:#201E1C;
+    --color-warm-black-two:#282623;
+    --color-grey:#BABABA;
+    --color-offwhite:#FAF8F7;
+    --color-justwhite:#FFFFFF;
+    --color-soft-grey: #757575;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+    min-width: 32rem;
+}
+.titulos {
+    padding: 2.5rem 0;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+.parrafos {
+    font-size: 1.4rem;
+    color: #808080;
+    font-weight: 500;
+}
+header {
+    position: relative;
+    width: 100%;
+    height: 33rem;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-justwhite);
+    text-align: center;
+    padding: 2rem;
+}
+header img {
+    width: 20rem;
+}
+header p {
+    color: var(--color-soft-orange) !important;
+}
+header .btn-planes {
+    box-shadow: 0 .5rem 1rem var(--color-grey);
+    position: absolute;
+    bottom: -2.5rem;
+    width: 80%;
+    height: 5rem;
+    background-color: var(--color-justwhite);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .btn-planes a {
+    text-decoration: none;
+    color: var(--color-warm-black);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+header .btn-planes img{
+    width: 3rem;
+}
+
+/* ----- sec one ------ */
+
+.sec-one {
+    width: 100%;
+    padding: 70px 20px;
+    text-align: center;
+    background: var(--color-offwhite);
+}
+.sec-one > div > img {
+    min-width: 20rem;
+}
+.sec-one h2 {
+    color: var(--color-warm-black);
+}
+.sec-one > p {
+    margin-bottom: 5rem;
+}
+.sec-one .table-moneda {
+    margin-top: 4rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 100%);
+    height: 34rem;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.sec-one .table-moneda div > p {
+    color: var(--color-bc-orange);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.sec-one .table-moneda div table {
+    margin: 0 auto;
+    scroll-snap-align: center;
+    width: 24rem;
+    border-radius: 15px;
+    font-family: 'Inter', sans-serif;
+}
+.sec-one .table-moneda table tr td {
+    position: relative;
+    width: 50%;
+    height: 5rem;
+    background-color: var(--color-justwhite);
+}
+.sec-one .table-moneda td:nth-child(1) {
+    padding-left: 1.5rem;
+    text-align: start;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #B5B0AC;
+}
+.sec-one .table-moneda td:nth-child(2) {
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #757575;
+}
+.sec-one .table-moneda table tr td .down {
+    position: absolute;
+    right: 0rem;
+    top: 2rem;
+    background: url(../assets/icon/trending-down.svg);
+    background-repeat: no-repeat;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.sec-one .table-moneda table tr td .up {
+    position: absolute;
+    right: 0rem;
+    top: 2rem;
+    background: url(../assets/icon/trending-up.svg);
+    background-repeat: no-repeat;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.sec-one > div .valor-usd {
+    margin: 1.5rem auto;
+    width: 12rem;
+    height: 4rem;
+    display: grid;
+    place-items: center;
+    background-color: var(--color-soft-orange);
+    border-radius: 10px;
+}
+.sec-one .table-moneda > div .valor-usd p {
+    color: var(--color-warm-black-two);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+}
+.sec-one .table-moneda > div:nth-child(2)  .valor-usd{
+    background-color: var(--color-soft-blue);
+}
+.sec-one .btn-tabla a {
+    display: inline-block;
+    margin: .5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: rgb(197, 197, 197);
+}
+.sec-one .btn-tabla a:hover {
+    background-color: var(--color-bc-orange);
+}
+/* ----- sec two ------ */
+
+.sec-two {
+    width: 100%;
+    padding: 70px 20px;
+    text-align: center;
+    background: var(--color-warm-black);
+}
+.sec-two > h2 {
+    color: var(--color-justwhite);
+}
+.sec-two .info-parrado-crip {
+    color: #808080;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 2rem;
+}
+.sec-two .cards-cont {
+    width: 100%;
+}
+.sec-two .card {
+    width: 100%;
+    height: 17rem;
+    background: var(--color-warm-black-two);
+    text-align: left;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+}
+.sec-two .card h3 {
+    font-size: 1.8rem;
+    color: var(--color-justwhite);
+    margin: .5rem 0;
+    font-weight: 700;
+}
+
+/* ----- sec three ------ */
+
+.sec-three {
+    width: 100%;
+    height: 38rem;
+    text-align: center;
+    background: url('../assets/img/bitcoinbaby.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.sec-three h2 {
+    font-size: 2.4rem;
+    color: var(--color-justwhite);
+    padding-top: 5rem;
+}
+
+/* ----- sec four ------ */
+
+.sec-four {
+    position: relative;
+    width: 100%;
+    padding: 70px 20px;
+    text-align: center;
+    background: var(--color-offwhite);
+    overflow: hidden;
+}
+.sec-four .cards-slider {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 100%);
+    height: 36rem;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.sec-four .cards-slider .planes-cont {
+    scroll-snap-align: center;
+    position: relative;
+    margin: auto;
+}
+.sec-four .planes-cont .recomendado {
+    display: grid;
+    place-content: center;
+    position: absolute;
+    top: -1.5rem;
+    right: calc(50% - 5.5rem) ;
+    background-color: var(--color-bc-orange);
+    color: white;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+.sec-four .planes-cont .card-item {
+    padding: 4rem 1rem 1rem;
+    width: 20rem;
+    height: 26rem;
+    background-color: var(--color-justwhite);
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+.sec-four .planes-cont .card-item h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.sec-four .planes-cont .card-item .price{
+    position: relative;
+    font-size: 5.2rem;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+.sec-four .planes-cont .card-item .price span {
+    font-size: 1.2rem;
+    position: absolute;
+    top: 1rem;
+    left: 4.5rem;
+}
+.sec-four .planes-cont .card-item .parrafos {
+    margin: 1rem 0;
+}
+.sec-four .planes-cont .card-item .btn-plan {
+    position: absolute;
+    bottom: 1rem;
+    border-radius: 5px;
+    border: 2px solid var(--color-bc-orange);
+    background: var(--color-offwhite);
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: flex;
+    width: 90%;
+    height: 5rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.sec-four .planes-cont .card-item .btn-plan .arrow-right {
+    background: url('../assets/icon/arrow-right.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
+}
+.sec-four .btn-card {
+    position: absolute;
+    bottom: 5rem;
+    right: calc(50% - 3.2rem);
+}
+.sec-four .btn-card a {
+    display: inline-block;
+    margin: .5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: rgb(197, 197, 197);
+}
+.sec-four .btn-card a:hover {
+    background-color: var(--color-bc-orange);
+}
+/* ----- FOOTER ------ */
+
+footer {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: var(--color-bc-orange);
+}
+footer img {
+    width: 10rem;
+}
+footer div {
+    display: flex;
+    flex-direction: column;
+}
+footer div a {
+    text-decoration: none;
+    color: var(--color-justwhite);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 3rem;
+}
+@media (min-width:475px){
+    .sec-three {
+        background: url('../assets/img/bitcoinbaby_2.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto 100%;
+    }
+}
